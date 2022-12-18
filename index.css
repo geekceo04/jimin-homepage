@@ -80,12 +80,14 @@ footer {
         height: 230px;
         margin-bottom: 20%;
         border: 1px solid white;
-        border-radius: 100px;
+        border-radius: 50%;
         box-shadow: 0px 0px 35px 20px white;
     }
 
     .explain .explain-txt{
         text-align: center;
+        width: 70%;
+        margin-left: 15%;
         font-size: 20px;
         color: white;
         margin-bottom: 10px;
@@ -118,12 +120,14 @@ footer {
         width: 300px;
         height: 300px;
         border: 1px solid white;
-        border-radius: 100px;
+        border-radius: 50%;
         box-shadow: 0px 0px 35px 20px white;
         }
 
         .explain .explain-txt{
         text-align: center;
+        width: 70%;
+        margin-left: 15%;
         font-size: 20px;
         color: white;
         margin-bottom: 10px;
@@ -141,28 +145,30 @@ footer {
 
     @media screen and (max-width: 1200px){
         .explain {
-        margin: auto;
-        width: 300px;
-        height: 300px;
-        margin-bottom: 20%;
-        border: 1px solid white;
-        box-shadow: 0px 0px 35px 20px white;
-        border-radius: 100px;
+            margin: auto;
+            width: 300px;
+            height: 300px;
+            margin-bottom: 20%;
+            border: 1px solid white;
+            box-shadow: 0px 0px 35px 20px white;
+            border-radius: 50%;
         }
 
         .explain .explain-txt{
-        text-align: center;
-        font-size: 20px;
-        color: white;
-        margin-bottom: 10px;
+            text-align: center;
+            width: 70%;
+            margin-left: 15%;
+            font-size: 20px;
+            color: white;
+            margin-bottom: 10px;
         }
 
         .explain .explain-txt:nth-child(1) {
-        margin-top: 125px;
+            margin-top: 125px;
         }
 
         #explain-txt1{
-        margin-top: 110px;
+            margin-top: 110px;
         }
     }
 }
