@@ -1,0 +1,144 @@
+* {
+    margin: 0px;
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    margin-bottom: 10%;
+}
+
+.navbar_log {
+    font-size: 24px;
+    color: white;
+}
+
+.navbar_menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0px; 
+}
+
+.navbar_menu li {
+    padding: 8px 12px;
+}
+
+.navbar_menu li {
+    padding: 8px 12px;
+}
+
+.navbar_link {
+    display: flex;
+    color: white;
+    list-style: none;
+}
+
+.navbar_link li{
+    padding: 8px;
+}
+
+.name {
+    margin-top: 20px;
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+}
+
+.subname {
+    font-size: 1rem;
+    color: #A2A2A2;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.mind, .coding{
+    width: 96%;
+    margin-left: 2%;
+    margin-bottom: 100px;
+}
+
+.title{
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.content-title{
+    background-color: #3634a5;
+}
+
+img {
+    margin-bottom: 50px; 
+    width: 100%;
+    height: auto;
+    border:1px solid #232188;
+}
+
+video {
+    margin-bottom: 50px; 
+    width: 100%;
+    height: auto;
+}
+
+input[id*="answer"] {
+    display: none;
+}
+
+input[id*="answer"] + label {
+    text-align: center;
+    display:block;
+    padding:20px;
+    border:1px solid #232188;
+    border-bottom:0;
+    color:#fff;
+    font-weight: 900;
+    background:#3634a5;
+    cursor:pointer;
+    position:relative;
+}
+
+input[id*="answer"]+label+div {
+    max-height: 0;
+    transition: all .65s;
+    overflow: hidden;
+    font-size: 15px;
+}
+
+input[id*="answer"] + label + div p {
+    display: inline-block;
+    padding: 20px;
+}
+
+input[id*="answer"]:checked + label + div {max-height: 1000px;}
+
+@media (hover: hover) and (pointer: fine) {
+    @media screen and (max-width: 1200px){
+    .navbar {
+        margin: auto;
+        margin-bottom: 7%;
+    }
+    }
+    @media screen and (min-width: 1200px){
+    .navbar {
+        width: 40%;
+        margin: auto;
+        margin-bottom: 7%;
+    }
+
+    .mind, .coding{
+        width: 60%;
+        margin-left: 20%;
+        margin-bottom: 100px;
+    }
+    }
+}
+  
