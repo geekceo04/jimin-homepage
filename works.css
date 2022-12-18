@@ -73,14 +73,16 @@ a {
 }
 
 .content-title{
-    background-color: #3634a5;
+    background-color: #FFFFFF;
+    /* background-color: #3634a5; */
 }
 
 img {
     margin-bottom: 50px; 
     width: 100%;
     height: auto;
-    border:1px solid #232188;
+    border: 1px solid #DCDCDC;
+    /* border:1px solid #232188; */
 }
 
 video {
@@ -97,11 +99,14 @@ input[id*="answer"] + label {
     text-align: center;
     display:block;
     padding:20px;
-    border:1px solid #232188;
+    border: 1px solid #DCDCDC;
+    /* border:1px solid #232188; */
     border-bottom:0;
-    color:#fff;
+    color: black;
+    /* color:#fff; */
     font-weight: 900;
-    background:#3634a5;
+    background: #FFFFFF;
+    /* background:#3634a5; */
     cursor:pointer;
     position:relative;
 }
