@@ -71,8 +71,8 @@ footer {
     text-align: center;
     color: white;
 }
-
-@media (hover: none) and (pointer: coarse) {
+/* 모바일버전 */
+@media (hover: none) and (pointer: coarse) { 
 
     .explain {
         margin: auto;
@@ -82,27 +82,35 @@ footer {
         border: 1px solid white;
         border-radius: 50%;
         box-shadow: 0px 0px 35px 20px white;
+        text-align: center;
     }
 
+
     .explain .explain-txt{
-        text-align: center;
-        width: 70%;
-        margin-left: 15%;
+        display: inline-block;
         font-size: 20px;
         color: white;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
 
     .explain .explain-txt:nth-child(1) {
-        margin-top: 90px;
+        margin-top: 70px;
+    }
+
+    .explain:nth-child(1) .explain-txt:nth-child(1){
+        width: 100px;
+    }
+
+    .explain:nth-child(3) .explain-txt:nth-child(1){
+        margin-top: 100px;
     }
 
     #explain-txt1{
-        margin-top: 75px;
+        margin-top: 70px;
     }
-    }
-
-    @media (hover: hover) and (pointer: fine) {
+}
+/* 컴퓨터 버전 */
+@media (hover: hover) and (pointer: fine) {
     @media screen and (min-width: 1201px){
         .navbar {
         width: 40%;
