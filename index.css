@@ -1,180 +1,57 @@
-* {
-    margin: 0px;
+body {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: black;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-}
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 12px;
-}
-
-.navbar_log {
-    font-size: 24px;
-    color: white;
-}
-
-.navbar_menu {
-    display: flex;
-    list-style: none;
-    padding-left: 0px; 
-}
-
-.navbar_menu li {
-    padding: 8px 12px;
-}
-
-.navbar_menu li {
-    padding: 8px 12px;
-}
-
-.navbar_link {
-    display: flex;
-    color: white;
-    list-style: none;
-}
-
-.navbar_link li{
-    padding: 8px;
-}
-
-.name {
-    margin-top: 20px;
-    font-size: 4rem;
-    color: white;
-    text-align: center;
-}
-
-.subname {
-    font-size: 1rem;
-    color: #A2A2A2;
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.me, .goal{
-    margin-bottom: 70px;
-}
-
-p {
-    text-align: center;
-    margin-bottom: 10px;
-    color: white;
-}
-
-footer {
-    text-align: center;
-    color: white;
-}
-/* 모바일버전 */
-.explain {
-    margin: auto;
-    width: 230px;
-    height: 230px;
-    margin-bottom: 20%;
-    border: 1px solid white;
+.ball {
+    width: 400px;
+    height: 400px;
+    background-color: white;
     border-radius: 50%;
-    box-shadow: 0px 0px 35px 20px white;
-    text-align: center;
+    box-shadow:
+        /* 공 바깥쪽 그림자 */
+        0 0 20px 0 white,
+        10px 10px 20px 10px purple,
+        -10px -10px 20px 0 cyan,
+        /* 공 안쪽 그림자 */
+        inset 0 0 14px 0 white,
+        inset -40px -30px 60px 0 purple,
+        inset -40px -30px 70px 0 blue,
+        inset -40px -30px 100px 0 cyan,
+        inset -40px -30px 140px 0 powderblue;
+    animation: glow 2s linear infinite alternate;
 }
 
-
-.explain .explain-txt{
-    display: inline-block;
-    font-size: 20px;
-    color: white;
-    margin-bottom: 5px;
-}
-
-.explain .explain-txt:nth-child(1) {
-    margin-top: 70px;
-}
-
-.explain:nth-child(1) .explain-txt:nth-child(1){
-    width: 100px;
-}
-
-.explain:nth-child(3) .explain-txt:nth-child(1){
-    margin-top: 100px;
-}
-
-#explain-txt1{
-    margin-top: 70px;
-}
-
-/* 컴퓨터 버전 */
-@media (hover: hover) and (pointer: fine) {
-    @media screen and (min-width: 1201px){
-        .navbar {
-        width: 40%;
-        margin: auto;
-        }
-        .explains{
-        display: flex;
-        width: 80%;
-        margin: auto;
-        margin-bottom : 50px;
-        }
-        
-        .explain {
-        margin: auto;
-        width: 300px;
-        height: 300px;
-        border: 1px solid white;
-        border-radius: 50%;
-        box-shadow: 0px 0px 35px 20px white;
-        }
-
-        .explain .explain-txt{
-        text-align: center;
-        width: 70%;
-        margin-left: 15%;
-        font-size: 20px;
-        color: white;
-        margin-bottom: 10px;
-        }
-
-        .explain .explain-txt:nth-child(1) {
-        margin-top: 125px;
-        }
-
-        #explain-txt1{
-        margin-top: 110px;
-        }
+@keyframes glow {
+    from {
+        box-shadow:
+        /* 공 바깥쪽 그림자 */
+        0 0 20px 0 white,
+        10px 10px 20px 10px purple,
+        -10px -10px 20px 0 cyan,
+        /* 공 안쪽 그림자 */
+        inset 0 0 14px 0 white,
+        inset -40px -30px 60px 0 purple,
+        inset -40px -30px 70px 0 blue,
+        inset -40px -30px 100px 0 cyan,
+        inset -40px -30px 140px 0 powderblue;
     }
 
-
-    @media screen and (max-width: 1200px){
-        .explain {
-            margin: auto;
-            width: 300px;
-            height: 300px;
-            margin-bottom: 20%;
-            border: 1px solid white;
-            box-shadow: 0px 0px 35px 20px white;
-            border-radius: 50%;
-        }
-
-        .explain .explain-txt{
-            text-align: center;
-            width: 70%;
-            margin-left: 15%;
-            font-size: 20px;
-            color: white;
-            margin-bottom: 10px;
-        }
-
-        .explain .explain-txt:nth-child(1) {
-            margin-top: 125px;
-        }
-
-        #explain-txt1{
-            margin-top: 110px;
-        }
+    to {
+        box-shadow:
+        /* 공 바깥쪽 그림자 */
+        0 0 20px 0 white,
+        10px 10px 20px 10px brown,
+        -10px -10px 20px 0 green,
+        /* 공 안쪽 그림자 */
+        inset 0 0 14px 0 white,
+        inset -40px -30px 60px 0 brown,
+        inset -40px -30px 70px 0 blue,
+        inset -40px -30px 100px 0 green,
+        inset -40px -30px 140px 0 powderblue;
     }
 }
