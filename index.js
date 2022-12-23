@@ -1,1 +1,1 @@
-setTimeout(() => location.href = "main.html", 3500);
+setTimeout(() => location.href = "main.html", 3000);
