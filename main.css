@@ -1,3 +1,4 @@
+/* 공통 */
 * {
     margin: 0px;
     background-color: black;
@@ -7,6 +8,7 @@ a {
     text-decoration: none;
     color: white;
 }
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -57,7 +59,7 @@ a {
     margin-bottom: 50px;
 }
 
-.me, .goal{
+.me{
     margin-bottom: 70px;
 }
 
@@ -71,8 +73,10 @@ footer {
     text-align: center;
     color: white;
 }
+
+
 /* 모바일버전 */
-.explain {
+.mobile .explain {
     margin: auto;
     width: 230px;
     height: 230px;
@@ -84,36 +88,31 @@ footer {
 }
 
 
-.explain .explain-txt{
+.mobile .explain .explain-txt{
     display: inline-block;
     font-size: 20px;
     color: white;
     margin-bottom: 5px;
 }
 
-.explain .explain-txt:nth-child(1) {
+.mobile .explain .explain-txt:nth-child(1) {
     margin-top: 70px;
 }
 
-.explain:nth-child(1) .explain-txt:nth-child(1){
+.mobile .explain:nth-child(1) .explain-txt:nth-child(1){
     width: 100px;
 }
 
-.explain:nth-child(3) .explain-txt:nth-child(1){
+.mobile .explain:nth-child(3) .explain-txt:nth-child(1){
     margin-top: 100px;
 }
 
-#explain-txt1{
+.mobile #explain-txt1{
     margin-top: 70px;
 }
 
 /* 컴퓨터 버전 */
 @media (hover: hover) and (pointer: fine) {
-    /* 공통 */
-    /* .explain .explain-txt{
-        display: inline;
-    }
-     */
     @media screen and (min-width: 1201px){
         .navbar {
             width: 40%;

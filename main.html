@@ -5,11 +5,25 @@
     <link rel="stylesheet" href="main.css">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width"/>
-    <script src="https://kit.fontawesome.com/2d323a629b.js">
+    <script src="https://kit.fontawesome.com/2d323a629b.js">  //fontawesome불러오기
     </script>
-    <script src="main.js"></script>
   </head>
-  <body>
+  <body id="basics" class="basics">
+    <script>
+      var filter = "win16|win32|win64|mac|macintel";
+
+      if ( navigator.platform ) {
+          if ( filter.indexOf( navigator.platform.toLowerCase() ) < 0 ) {
+              //mobile
+              let change = document.getElementById("basics");
+              change.className = "mobile";
+          } else {
+              //pc
+              let change = document.getElementById("basics");
+              change.className = "pc";
+          }
+      }
+    </script>
     <nav class="navbar">
       <div class="navbar_log">
         <i class="fas fa-atom"></i>
@@ -44,15 +58,28 @@
     <div class="me">
       <p>-소개-</p>
       <p>· "2008.04.04/농구, 철학, 코딩, 음식을 좋아한다."</p>
-      <p>· "코딩 1년 이상 했다."(백준알고리즘 실버)</p>
+      <p>· "코딩을 13살때 시작했다."(백준알고리즘 실버)</p>
+    </div>
+
+    <div class="me">
+      <p>-목표-</p>
+      <p>1. 서성한 이상 대학 입학하기.</p>
+      <p>2. 창업해서 자산 30살 전에 50억 모으기.</p>
+      <p>3. 지금까지 모은 돈으로 창업해서 한국 top10 부자되기.</p>
     </div>
 
     <div class="me">
       <p>-싫어하는 거-</p>
       <p>& 쩝쩝대는 소리.(면치기 등)</p>
-      <p>& 무식한 사람.</p>
+      <p>& 노력하지 않고 바라는 사람.</p>
     </div>
     
+    <div class="me">
+      <p>-좋아하는 거-</p>
+      <p>& 쩝쩝대는 소리.(면치기 등)</p>
+      <p>& 노력하지 않고 바라는 사람.</p>
+    </div>
+
     <div class="me">
       <p>-장점-</p>
       <p>* 코딩을 잘한다.</p>
@@ -63,13 +90,6 @@
       <p>-단점-</p>
       <p>= 손재주가 없다.</p>
       <p>= 영어를 못한다.</p>
-    </div>
-
-    <div class="goal">
-      <p>-목표-</p>
-      <p>1. 서성한 이상 대학 입학하기.</p>
-      <p>2. 창업해서 자산 30살 전에 50억 모으기.</p>
-      <p>3. 지금까지 모은 돈으로 창업해서 한국 top10 부자되기.</p>
     </div>
 
     <div class="explains">
