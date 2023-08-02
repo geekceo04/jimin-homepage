@@ -1,0 +1,203 @@
+/* 공통 */
+* {
+    margin: 0px;
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+}
+
+.navbar_log {
+    font-size: 24px;
+    color: white;
+}
+
+.navbar_menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0px; 
+}
+
+.navbar_menu li {
+    padding: 8px 12px;
+}
+
+.navbar_menu li {
+    padding: 8px 12px;
+}
+
+.navbar_link {
+    display: flex;
+    color: white;
+    list-style: none;
+}
+
+.navbar_link li{
+    padding: 8px;
+}
+
+.name {
+    margin-top: 20px;
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+}
+
+.subname {
+    font-size: 1rem;
+    color: #A2A2A2;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.me{
+    margin-bottom: 70px;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    color: white;
+}
+
+
+/* 모바일버전 */
+.mobile .detailed_introduction {
+    text-align: center;
+    margin-bottom: 20%;
+}
+
+.mobile .detailed_introduction_item {
+    width: 60%;
+    margin-left: 20%;
+}
+
+.mobile .detailed_introduction_item div {
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    background-color: blue;
+}
+
+.mobile .explain {
+    margin: auto;
+    width: 230px;
+    height: 230px;
+    margin-bottom: 20%;
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 35px 20px white;
+    text-align: center;
+}
+
+
+.mobile .explain .explain-txt{
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.mobile .explain .explain-txt:nth-child(1) {
+    margin-top: 70px;
+}
+
+.mobile .explain:nth-child(1) .explain-txt:nth-child(1){
+    width: 100px;
+}
+
+.mobile .explain:nth-child(3) .explain-txt:nth-child(1){
+    margin-top: 100px;
+}
+
+.mobile #explain-txt1{
+    margin-top: 70px;
+}
+
+/* 컴퓨터 버전 */
+@media (hover: hover) and (pointer: fine) {
+    @media screen and (min-width: 1201px){
+        .navbar {
+            width: 40%;
+            margin: auto;
+        }
+        .explains{
+            display: flex;
+            width: 80%;
+            margin: auto;
+            margin-bottom : 50px;
+        }
+        
+        .explain {
+            margin: auto;
+            width: 300px;
+            height: 300px;
+            border: 1px solid white;
+            border-radius: 50%;
+            box-shadow: 0px 0px 35px 20px white;
+        }
+
+        .explain .explain-txt{
+            text-align: center;
+            width: 70%;
+            margin-left: 15%;
+            font-size: 20px;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .explain .explain-txt:nth-child(1) {
+            margin-top: 125px;
+        }
+
+        #explain-txt1{
+            margin-top: 110px;
+        }
+    }
+
+
+    @media screen and (max-width: 1200px){
+        .explain {
+            margin: auto;
+            width: 300px;
+            height: 300px;
+            margin-bottom: 20%;
+            border: 1px solid white;
+            box-shadow: 0px 0px 35px 20px white;
+            border-radius: 50%;
+        }
+
+        .explain .explain-txt{
+            text-align: center;
+            width: 70%;
+            margin-left: 15%;
+            font-size: 20px;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .explain .explain-txt:nth-child(1) {
+            margin-top: 125px;
+        }
+
+        #explain-txt1{
+            margin-top: 110px;
+        }
+    }
+}
